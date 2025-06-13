@@ -12,17 +12,18 @@ A comprehensive fullstack application for managing beauty salons and hair studio
 
 ### Appointment System
 - Real-time availability checking
-- Automated reminders
+- Only for registred users, but not registred user can check free dates
 - Calendar integration
 - Service duration tracking
+- Scheluding a appointment from one account for diffrent persons (for example that use case: You want to schelude an appointment for your old uncle you can do this on his name and surrname and his phone), but by default it's scheluded on yours name and surrname that you assigned for you account 
 
-### Staff Management
+### Staff Management - in the future
 - Staff schedules
 - Service assignments
 - Performance tracking
 - Commission calculations
 
-### Business Analytics
+### Business Analytics - in the future
 - Revenue tracking
 - Service popularity metrics
 - Client retention statistics
