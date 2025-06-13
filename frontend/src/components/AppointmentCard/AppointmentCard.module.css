@@ -1,0 +1,91 @@
+.card {
+    background: white;
+    border-radius: var(--card-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .item {
+    flex: 1 1 45%;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #6b7280;
+    margin-right: 0.25rem;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: row;       
+    gap: 0.75rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .actions input,
+  .actions select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #f8fafc;
+    color: #1f2937;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .actions input:focus,
+  .actions select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+    background-color: #ffffff;
+  }
+  
+  
+  .actions button:hover {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  @media (max-width: 600px) {
+    .item {
+      flex: 1 1 100%;
+    }
+  
+    .actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  

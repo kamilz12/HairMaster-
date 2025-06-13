@@ -1,0 +1,19 @@
+:root {
+    /* Kolory */
+    --color-primary: #4f46e5;
+    --color-secondary: #818cf8;
+    --color-accent: #d8b4fe;
+  
+    --color-bg: #ffffff;
+    --color-bg-alt: #f9fafb;
+    --color-text: #222;
+  
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+  
+    /* Rounding */
+    --radius: 8px;
+  }
+  

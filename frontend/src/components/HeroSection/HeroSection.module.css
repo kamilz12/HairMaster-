@@ -1,0 +1,77 @@
+.heroSection {
+  /* jeśli chcesz mieć całą sekcję */
+  height: 80vh; /* lepiej spójna wysokość z .hero */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
+.heroContent {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+
+}
+
+.heroContent h1 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.heroContent button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #4f46e5;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.heroContent button:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .heroSection {
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .heroContent button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

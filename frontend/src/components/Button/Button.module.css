@@ -1,0 +1,25 @@
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.2);
+}
+
+.button:active {
+  transform: scale(0.97);
+}

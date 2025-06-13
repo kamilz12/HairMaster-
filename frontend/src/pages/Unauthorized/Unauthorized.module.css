@@ -1,0 +1,17 @@
+.container {
+    padding: 3rem;
+    text-align: center;
+    color: #d32f2f;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

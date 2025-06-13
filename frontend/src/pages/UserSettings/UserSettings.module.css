@@ -1,0 +1,26 @@
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  
+  .success {
+    color: green;
+    margin-top: 1rem;
+  }
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }

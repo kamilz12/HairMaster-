@@ -1,0 +1,41 @@
+@import './variables.css';
+
+:root {
+    --color-primary: #4f46e5;
+    --color-primary-hover: #4338ca;
+    --color-text: #333;
+    --color-text-layout: black;
+    --color-layout-text: rgb(250, 250, 250);
+    --transition-speed: 0.3s;
+  }
+  
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-layout);
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+  }
+  
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+  

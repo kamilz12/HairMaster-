@@ -1,0 +1,60 @@
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 40vh;
+  object-fit: contain; /* Pokazuje całe zdjęcie bez przycinania */
+  border-radius: 8px;
+  background-color: #f0f0f0; /* tło w razie pustych przestrzeni */
+  transition: transform 0.3s ease;
+}
+
+.galleryItem img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.styleName {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic; /* kursywa – wygląda jak opinia */
+  color: #555; /* subtelniejszy kolor (opcjonalnie) */
+}
+
+.styleName::before {
+  content: "“";
+}
+.styleName::after {
+  content: "”";
+}
+/* Średnie ekrany */
+@media (max-width: 1024px) {
+  .gallery img {
+    height: 30vh;
+  }
+}
+
+/* Małe ekrany */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 25vh;
+  }
+}
+
+/* Bardzo małe ekrany */
+@media (max-width: 480px) {
+  .gallery img {
+    height: 20vh;
+    transform: none;
+  }
+}
