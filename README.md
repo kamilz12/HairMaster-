@@ -28,6 +28,15 @@ A comprehensive fullstack application for managing beauty salons and hair studio
 - Client retention statistics
 - Staff performance reports
 
+![image](https://github.com/user-attachments/assets/21573cfb-0434-41a0-b8c8-3363ac173acf)
+![image](https://github.com/user-attachments/assets/bf930fae-7677-494f-8096-0dd340b64644)
+![image](https://github.com/user-attachments/assets/91e4663d-94aa-4b96-a786-dbe51aea8d9e)
+![image](https://github.com/user-attachments/assets/064b1e77-dfbb-4cca-9efc-e1b5458bc077)
+![image](https://github.com/user-attachments/assets/cb664d52-bf05-4e2a-a441-062b7a2055b6)
+![image](https://github.com/user-attachments/assets/fe1a3642-8c22-492a-99de-d8b8b43277ee)
+![image](https://github.com/user-attachments/assets/b66ddd61-183a-4057-86d5-bf5e23b20606)
+
+
 ## Project Structure
 
 The project is organized into two main components:
