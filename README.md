@@ -1,33 +1,25 @@
-# Salon Management System
+# HairMaster
 
-A comprehensive fullstack application for managing beauty salons and hair studios. This system provides a modern, efficient solution for salon owners to manage appointments, clients, services, and staff.
+HairMaster is a modern fullstack application for managing hair salons. It enables clients to book appointments online and allows salon owners to manage schedules in a simple and efficient way.
 
-## Features
+## ✨ Features
 
-### Client Management
-- Client profiles and history
-- Appointment scheduling
-- Service preferences
-- Contact information management
+### 📅 Appointment Booking
+- View available time slots without logging in
+- Book appointments as a registered user
+- Book an appointment on behalf of someone else (e.g., family member)
+- Automatic service duration handling
 
-### Appointment System
-- Real-time availability checking
-- Only for registred users, but not registred user can check free dates
-- Calendar integration
-- Service duration tracking
-- Scheluding a appointment from one account for diffrent persons (for example that use case: You want to schelude an appointment for your old uncle you can do this on his name and surrname and his phone), but by default it's scheluded on yours name and surrname that you assigned for you account 
+### 👤 User Account Management
+- JWT-based authentication
+- Secure password storage (bcrypt)
+- Personal information tied to user accounts
+- Booking history (coming soon)
 
-### Staff Management - in the future
-- Staff schedules
-- Service assignments
-- Performance tracking
-- Commission calculations
-
-### Business Analytics - in the future
-- Revenue tracking
-- Service popularity metrics
-- Client retention statistics
-- Staff performance reports
+### 🔒 Security
+- Encrypted passwords with `bcrypt`
+- Token-based sessions with `JWT`
+- Cookie support for secure frontend-backend communication
 
 ![image](https://github.com/user-attachments/assets/21573cfb-0434-41a0-b8c8-3363ac173acf)
 ![image](https://github.com/user-attachments/assets/bf930fae-7677-494f-8096-0dd340b64644)
@@ -38,148 +30,85 @@ A comprehensive fullstack application for managing beauty salons and hair studio
 ![image](https://github.com/user-attachments/assets/b66ddd61-183a-4057-86d5-bf5e23b20606)
 
 
-## Project Structure
+## 📁 Project Structure
 
-The project is organized into two main components:
+```
+HairMaster/
+├── backend/      # Express API + MongoDB
+├── frontend/     # React application (with Vite)
+```
 
-### Frontend (`/frontend`)
-- Modern React application with TypeScript
-- Responsive design for all devices
-- Component-based architecture
-- State management with React Context
-- Form handling with React Hook Form
-- UI components with Material-UI
+## 🛠️ Technology Stack
 
-### Backend (`/backend`)
-- RESTful API built with Express.js
-- TypeScript for type safety
-- MongoDB database integration
-- JWT authentication
-- Input validation
-- Error handling middleware
-
-## Technology Stack
-
-### Frontend
-- **Framework**: React 18+
-- **Language**: TypeScript 5.0+
-- **Build Tool**: Vite
-- **State Management**: React Context API
-- **UI Library**: Material-UI
-- **HTTP Client**: Fetch
-- **Code Quality**: ESLint
-
-### Backend
-- **Runtime**: Node.js 18+
-- **Framework**: Express.js
-- **Language**: TypeScript 5.0+
-- **Database**: MongoDB
-- **ORM**: Mongoose
+### 🔧 Backend (`/backend`)
+- **Runtime**: Node.js + Express
+- **Language**: TypeScript
+- **Database**: MongoDB with Mongoose
 - **Authentication**: JWT
-- **Validation**: Joi
-- **Package Manager**: npm
+- **Encryption**: bcrypt
+- **Environment Variables**: dotenv
 
-## System Requirements
+### 🎨 Frontend (`/frontend`)
+- **Framework**: React 19
+- **Routing**: React Router DOM 7
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Date Picker**: React Calendar
 
-- Node.js 18.x or higher
-- npm 9.x or higher / yarn 1.22.x or higher
-- MongoDB 6.x or higher
-- Modern web browser (Chrome, Firefox, Safari, Edge)
+## 🚀 Getting Started
 
-## Installation
+### Requirements
+- Node.js v18+
+- MongoDB v6+
 
-### Prerequisites
-1. Install Node.js and npm/yarn
-2. Install MongoDB
-3. Clone the repository:
+### Clone the repository
 ```bash
-git clone https://github.com/yourusername/salon-management-system.git
-cd salon-management-system
+git clone https://github.com/kamilz12/HairMaster.git
+cd HairMaster
+```
+
+### Backend Setup
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Create a `.env` file inside `/backend`:
+```
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/hairmaster
+JWT_SECRET=your_secret_key
 ```
 
 ### Frontend Setup
 ```bash
 cd frontend
 npm install
-
-### Backend Setup
-```bash
-cd backend
-npm install
-
-
-## Environment Variables
-
-### Frontend (.env)
-```
-VITE_API_URL=http://localhost:5173
-VITE_APP_NAME=Salon Management
-```
-
-### Backend (.env)
-```
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/salon
-JWT_SECRET=your_jwt_secret
-NODE_ENV=development
-```
-
-## API features
-
-- Available endpoints
-- Request/response formats
-- Authentication requirements
-- Error codes and handling
-
-## Testing
-
-### Frontend Tests
-- Unit tests for components
-- Integration tests for features
-- E2E tests with Cypress
-
-### Backend Tests
-- Unit tests for services
-- Integration tests for API endpoints
-- Database integration tests
-
-## Deployment
-
-### Frontend Deployment
-1. Set up environment variables
-2. Build the application:
-```bash
-cd frontend
 npm run dev
 ```
 
-### Backend Deployment
-1. Set up environment variables
-
-2. Build the application:
-```bash
-cd backend
-npm run dev
+Create a `.env` file inside `/frontend`:
+```
+VITE_API_URL=http://localhost:3000
 ```
 
+## 🧪 Testing
 
-## Code Style
+> Currently, no unit or integration tests are implemented. The `"test"` script is a placeholder.
 
-- Follow the TypeScript style guide
-- Use ESLint and Prettier for code formatting
-- Write meaningful commit messages
-- Document new features and changes
+## 📌 Planned Features
 
-## License
+- Staff management dashboard
+- Business analytics & metrics
+- Service duration & availability configuration
+- Admin panel for approving bookings
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License
 
-## Support
+This project is licensed under the **MIT License**.
 
-For support, please open an issue in the GitHub repository or contact the development team.
+## 📬 Support
 
-## Acknowledgments
+If you encounter issues or have suggestions, feel free to open an issue in the repository.
 
-- Material-UI for the component library
-- MongoDB for the database
-- All contributors who have helped shape this project 
